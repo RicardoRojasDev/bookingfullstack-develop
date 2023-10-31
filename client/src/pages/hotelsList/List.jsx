@@ -100,7 +100,7 @@ const List = () => {
                 <button onClick={handleClick}>Buscar</button>
               </div>
               <div className="listResult">
-                {loading ? ("loading") : (
+                {loading ? ("Cargando...") : (
                     <>
                         {data.map((item) => (
                         <SearchItem item={item} key={item._id} />
