@@ -71,7 +71,7 @@ const Header = ({type}) => {
                 </div>
                 <div className="headerSearchItem">
                     <FontAwesomeIcon icon={faCalendarDays} className="headerIcon"/>
-                    <span onClick={()=>setOpenDate(!openDate)} className="headerSearchText">{`${format(dates[0].startDate, "dd/MM/yyyy")} to ${format(dates[0].endDate, "dd/MM/yyyy")}`}</span>
+                    <span onClick={()=>setOpenDate(!openDate)} className="headerSearchText">{`${format(dates[0].startDate, "dd/MM/yyyy")} Al ${format(dates[0].endDate, "dd/MM/yyyy")}`}</span>
                     {openDate  && ( 
                     <DateRange
                         editableDateInputs={true}
@@ -85,7 +85,7 @@ const Header = ({type}) => {
                 </div>
                 <div className="headerSearchItem">
                     <FontAwesomeIcon icon={faPerson} className="headerIcon"/>
-                    <span onClick={()=>setOpenOptions(!openOptions)} className="headerSearchText">{`${options.adult} adult · ${options.children} children · ${options.room} rooms`}</span>
+                    <span onClick={()=>setOpenOptions(!openOptions)} className="headerSearchText">{`${options.adult} adulto · ${options.children} niños · ${options.room} habitaciones`}</span>
                     {openOptions && (
                     <div className="options">
                         <div className="optionItem">
